@@ -24,14 +24,10 @@ menu_texts = menu_texts + f"{len(drinks)+1}) 주문종료 : "
 
 while True:
    # menu = input(f"1) {drinks[0]} {prices[0]}원  2) {drinks[1]} {prices[1]}원  3) {drinks[2]} {prices[2]}원  4) 주문종료 : ")
-    menu = input(menu_texts)
-    if menu == "1":
-       order_process(int(menu)-1)
-    elif menu == "2":
-        order_process(int(menu) - 1)
-    elif menu == "3":
-        order_process(int(menu) - 1)
-    elif menu == "4":
+    menu = int(input(menu_texts))
+    if len(drinks)>= menu >= 1:
+       order_process(menu-1)
+    elif menu == len(drinks)+1:
         print("주문을 종료합니다")
         break
     else:
