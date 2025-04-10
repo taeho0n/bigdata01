@@ -11,4 +11,15 @@ This repository manages the codes used in the first semester of the Big Data Pro
 
 
 6주차
-
+kiosk 프로그램을 만들어서 업그레이드
+v0.1
+v0.2
+v0.3
+v0.4
+v0.5
+v0.6
+v0.7
+v0.8
+v0.9
+v1.0- 수량이 0보다 큰 애들만 출력 하도록 수정
+v1.1- 주문 처리 함수 추가
