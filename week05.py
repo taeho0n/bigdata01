@@ -3,7 +3,7 @@ def is_prime(number : int) -> bool:
     """
     Function to determine whether a number is a prime number
     :param number:The number to determine whether it is prime or not
-    :return: Returns True if it is prime number, False if it is a prime number
+    :return: Returns True if it is prime number, False if it is not a prime number
     """
 
    # is_prime = True
@@ -12,6 +12,7 @@ def is_prime(number : int) -> bool:
         for i in range(2,int(number**0.5)+1):
             if number % i ==0:
                 return False
+            # print(i,end="")
     else:
         return False
     return  True
