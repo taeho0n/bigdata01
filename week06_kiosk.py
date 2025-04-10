@@ -7,6 +7,16 @@ amounts = [0, 0, 0]
 # amounts = [0]
 total_price = 0
 
+def order_process(idx):
+    """
+    주문 처리 함수 1) 주문 디스플레이 2)총 누적 금액  3)주문 품목 수량 업데이트
+    :return: 없음
+    """
+    global total_price  #global=>전역변수 키워드
+    print(f"{drinks[idx]}를 주문하셨습니다. 가격은 {prices[idx]}원 입니다")
+    total_price = total_price + prices[idx]
+    amounts[idx] = amounts[idx] + 1
+
 menu_texts = ""
 for j in range(len(drinks)):
     menu_texts = menu_texts + f"{j+1}) {drinks[j]} {prices[j]}원  "
@@ -16,17 +26,11 @@ while True:
    # menu = input(f"1) {drinks[0]} {prices[0]}원  2) {drinks[1]} {prices[1]}원  3) {drinks[2]} {prices[2]}원  4) 주문종료 : ")
     menu = input(menu_texts)
     if menu == "1":
-        print(f"{drinks[0]}를 주문하셨습니다. 가격은 {prices[0]}원 입니다")
-        total_price = total_price + prices[0]
-        amounts[0] = amounts[0] + 1
+       order_process(int(menu)-1)
     elif menu == "2":
-        print(f"{drinks[1]}를 주문하셨습니다. 가격은 {prices[1]}원 입니다")
-        total_price = total_price + prices[1]
-        amounts[1] = amounts[1] + 1
+        order_process(int(menu) - 1)
     elif menu == "3":
-        print(f"{drinks[2]}를 주문하셨습니다. 가격은 {prices[2]}원 입니다")
-        total_price = total_price + prices[2]
-        amounts[2] = amounts[2] + 1
+        order_process(int(menu) - 1)
     elif menu == "4":
         print("주문을 종료합니다")
         break
