@@ -12,15 +12,15 @@ This repository manages the codes used in the first semester of the Big Data Pro
 
 6주차
 kiosk 프로그램을 만들어서 업그레이드
-* v0.1
-* v0.2
-* v0.3
-* v0.4
-* v0.5
-* v0.6
-* v0.7
-* v0.8
-* v0.9
+* v0.1- 초기버전
+* v0.2- while문으로 주문 계속가능하게 만듦
+* v0.3- 가격 리스트화
+* v0.4- 음료 리스트화
+* v0.5- total_price 추가
+* v0.6- order_list 추가
+* v0.7- amounts 추가
+* v0.8- 메뉴 추가,영수증 초기
+* v0.9- menu_text 자동환
 * v1.0- 수량이 0보다 큰 애들만 출력 하도록 수정
 * v1.1- 주문 처리 함수 추가
 * v1.2- while문 안에 있는 if문 간소화(자동화)
@@ -28,3 +28,6 @@ kiosk 프로그램을 만들어서 업그레이드
 * v1.4- amount (list comprehension (리스트 축약))
 * v1.5- amount (곱셈을 활용해서 처리 (3가지 다 비슷하지만 곱셈이 미세하게 빠름))
 * v1.6- 영수증 정렬
+
+temp 파일 
+- git엔 올리지 않고 python 함수 공부용
