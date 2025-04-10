@@ -26,3 +26,4 @@ v1.1- 주문 처리 함수 추가
 v1.2- while문 안에 있는 if문 간소화(자동화)
 v1.3- amount 자동화 (for문 사용)
 v1.4- amount (list comprehension (리스트 축약))
+v1.5- amount (곱셈을 활용해서 처리 (3가지 다 비슷하지만 곱셈이 미세하게 빠름))
