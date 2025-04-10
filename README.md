@@ -28,6 +28,7 @@ kiosk 프로그램을 만들어서 업그레이드
 * v1.4- amount (list comprehension (리스트 축약))
 * v1.5- amount (곱셈을 활용해서 처리 (3가지 다 비슷하지만 곱셈이 미세하게 빠름))
 * v1.6- 영수증 정렬
+* v1.7- join함수 사용
 
 temp 파일 
 - git엔 올리지 않고 python 함수 공부용
