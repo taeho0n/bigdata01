@@ -24,4 +24,5 @@ v0.9
 v1.0- 수량이 0보다 큰 애들만 출력 하도록 수정
 v1.1- 주문 처리 함수 추가
 v1.2- while문 안에 있는 if문 간소화(자동화)
-v1.3- amount 자동화
+v1.3- amount 자동화 (for문 사용)
+v1.4- amount (list comprehension (리스트 축약))

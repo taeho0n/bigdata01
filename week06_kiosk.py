@@ -6,9 +6,10 @@ prices = [1500, 2500, 4000, 4200]
 # amounts = [0]
 total_price = 0
 
-amounts = list()
-for _ in range (len(drinks)):
-    amounts.append(0)
+#amounts = list()
+#for _ in range (len(drinks)):
+#   amounts.append(0)
+amounts=[0 for _ in range(len(drinks))] #list comprehension (리스트 축약)
 
 def order_process(idx):
     """
