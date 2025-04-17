@@ -4,14 +4,14 @@ total_price = 0
 
 amounts = [0] * len(drinks)
 
-def order_process(idx):
+def order_process(idx: int)->None:
 
     global total_price
     print(f"{drinks[idx]}를 주문하셨습니다. 가격은 {prices[idx]}원 입니다")
     total_price = total_price + prices[idx]
     amounts[idx] = amounts[idx] + 1
 
-def display_menu():
+def display_menu()->str:
     """
     음료 선택 메뉴 display 기능
     :return: 음료 메뉴 및 주문 종료(문자열)
@@ -21,7 +21,7 @@ def display_menu():
     menu_texts = menu_texts + f"{len(drinks)+1}) 주문종료 : "
     return menu_texts
 
-def print_receipt():
+def print_receipt()->None:
     """
     영수증 출력 기능
     :return: X
