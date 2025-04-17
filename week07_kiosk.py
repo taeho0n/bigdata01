@@ -21,6 +21,18 @@ def display_menu():
     menu_texts = menu_texts + f"{len(drinks)+1}) 주문종료 : "
     return menu_texts
 
+def print_receipt():
+    """
+    영수증 출력 기능
+    :return: X
+    """
+    print(f"{'상품명':^16}{'단가':^6}{'수량':^6}{'금액':^6}")
+    for i in range(len(drinks)):
+        if amounts[i] > 0:
+            print(f"{drinks[i]:^16}{prices[i]:^6}{amounts[i]:^6}{prices[i] * amounts[i]:^6}")
+
+    print(f"총 주문 금액 : {total_price}원")
+
 while True:
     menu = int(input(display_menu()))
     if len(drinks)>= menu >= 1:
@@ -31,9 +43,5 @@ while True:
     else:
         print(f"{menu}번 메뉴는 존재하지 않습니다. 아래 메뉴에서 골라주세요")
 
-print(f"{'상품명':^16}{'단가':^6}{'수량':^6}{'금액':^6}")
-for i in range(len(drinks)):
-    if amounts[i] > 0 :
-        print(f"{drinks[i]:^16}{prices[i]:^6}{amounts[i]:^6}{prices[i] * amounts[i]:^6}")
+print_receipt()
 
-print(f"총 주문 금액 : {total_price}원")
