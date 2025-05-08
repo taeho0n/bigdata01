@@ -4,6 +4,14 @@ total_price = 0
 
 amounts = [0] * len(drinks)
 
+def apply_discount(price:int)->float:
+    """
+    총 금액이 특정 금액(임계값)을 넘어서면 할인률 적용 함수
+    :param price: 할인 전 총 금액
+    :return: 할인률이 적용된 금액 or 할인이 적용되지 않은 금액
+    """
+    pass
+
 def order_process(idx: int)->None:
 
     global total_price
@@ -32,21 +40,3 @@ def print_receipt()->None:
             print(f"{drinks[i]:^16}{prices[i]:^6}{amounts[i]:^6}{prices[i] * amounts[i]:^6}")
 
     print(f"총 주문 금액 : {total_price}원")
-
-# menu=0 while문 전체를 try문에 넣었을 때 첫번째 해결방법
-
-while True:
-    try:
-        menu = int(input(display_menu()))
-        if len(drinks)>= menu >= 1:
-           order_process(menu-1)
-        elif menu == len(drinks)+1:
-            print("주문을 종료합니다")
-            break
-        else:
-            print(f"{menu}번 메뉴는 존재하지 않습니다. 아래 메뉴에서 골라주세요")
-    except ValueError:
-             print(f"문자를 입력할 수 없습니다. 숫자를 입력해주세요")
-
-print_receipt()
-
