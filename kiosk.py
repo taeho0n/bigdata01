@@ -20,6 +20,25 @@ def apply_discount(price: int) -> float:
         return price*(1-DISCOUNT_RATE)
     return price
 
+def get_ticket_number()->int:
+    """
+    주문 번호표 처리 기능 함수
+    :return: 번호
+    """
+    number = 0
+    try:
+        with open("ticket.txt","r") as fp:
+            number = int(fp.read())
+    except FileNotFoundError:
+        number = 0
+
+    number= number +1
+
+    with open("ticket.txt", "w") as fp:
+        fp.write(str(number))
+
+    return number
+
 
 def order_process(idx: int) -> None:
     """
