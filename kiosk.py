@@ -102,6 +102,7 @@ def print_receipt() -> None:
 
     print(f"할인 전 총 주문 금액 : {total_price}원")
     if discount > 0:
+        print(f"할인 금액:{discount}원 ({DISCOUNT_RATE*100}%)")
         print(f"할인 금액: {discount}원")
         print(f"할인 적용 후 지불하실 총 금액은{discounted_price}원 입니다.")
     else:
