@@ -4,7 +4,8 @@
 * class 적용
 * week11 v1.0- 실행 함수 추가
 * week11 v1.1- 영수증에 할인율 표시
-* week11 v1.0- kiosk에 출력함수 추가
+* week11 v1.2- kiosk에 출력함수 추가
+* week11 v1.3- 날짜 및시간 출력
 
 
 

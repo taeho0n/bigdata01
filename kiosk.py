@@ -1,3 +1,5 @@
+import datetime
+
 drinks = ["아이스 아메리카노", "카페 라떼", "수박 주스", "딸기 주스"]
 prices = [1500, 2500, 4000, 4200]
 
@@ -107,6 +109,8 @@ def print_receipt() -> None:
         print(f"할인 적용 후 지불하실 총 금액은{discounted_price}원 입니다.")
     else:
         print(f"할인이 적용되지 않았습니다.\n 지불하실 총 금액은 {total_price}원 입니다.")
+
+        print(f"{datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
 
 
 
